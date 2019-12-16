@@ -1,0 +1,10 @@
+name:  Prueba CI
+on:  [push]
+jobs:
+  prueba:
+    name:  Prueba de comando
+    runs-on:  ubuntu-latest
+    steps:
+      - uses:  actions/checkoutCv1
+      - name:  Listado
+        run:  ls
